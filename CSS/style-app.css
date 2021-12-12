@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.pokedex{
+    width: 100%;
+    height: 100%;
+}
+    .principal{
+        position: relative;
+        top: 35%;
+        left: 7%;
+        width: 90%;
+        height:320px;
+        background: #8b0100;
+        border-bottom-left-radius:3.5em ;
+    }
+       
+        .decoracion{
+            width: 15px;
+            height: 15px;
+            background: #51af61;
+        }   
+            .eje1{
+              position: absolute; 
+              top: 15%;
+            }
+            .eje2{
+                position: absolute;
+                top: 5%;
+            }
+        
+        .secundary{
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            width: 85%;
+            height: 80%;
+            background: #c00d0e;
+            box-shadow: inset 9px -8px 0px -5px #6a0504;
+        } 
+            .opciones{
+                position: absolute;
+                top: 75%;
+                left: 10%;
+                width: 40%;
+                height: 55px;
+                border-radius: 1em;
+                background: #434342;
+            }
+            .search{
+                position: absolute;
+                top: 75%;
+                left: 70%;
+                width: 55px;
+                height: 55px;
+                background: #9ef0fb;
+                border-radius: 50%;
+            }
+
+        .case{
+            position: absolute;
+            top: -13%;
+            left: 15%;
+            width: 80%;
+            height: 40%;
+            background: #c00d0e;
+            box-shadow: inset 4px -4px 0px 0px #860607;
+
+        }
+            .semi-circulo {
+                width: 150px; 
+                height: 50px;
+                position: relative;
+                top: 25%;
+                left: 20%; 
+                
+                background: #860607;
+                -moz-border-radius: 100px 100px 0 0;
+                -webkit-border-radius: 100px 100px 0 0;
+                border-radius: 100px 100px 0 0;
+            }
+            .semi-circulo2 {
+                width: 150px; 
+                height: 50px;
+                position: relative;
+                top: 35%;
+                left: 20%; 
+                
+                background: #860607;
+                -moz-border-radius: 0 0 100px 100px;
+                -webkit-border-radius: 0 0 100px 100px;
+                border-radius: 0 0 100px 100px;
+            }
+            .circulo{
+                z-index: 3;
+                border-radius: 50%;
+                width: 90px; 
+                height: 90px;
+                position: absolute;
+                top: 32%;
+                left: 32%;
+                background-color: #c00d0e;
+            }
+                .circulo2{
+                    z-index: 3;
+                    border-radius: 50%;
+                    width: 60px; 
+                    height: 60px;
+                    position: absolute;
+                    top: 17%;
+                    left: 17%;
+                    background-color: #51af61;
+                    box-shadow: 0px 0px 1px 8px #860607;
+                } 
+
+        
+          
+        .cilindro {
+            
+            position: absolute;
+            background: rgb(153,5,2);
+            background: linear-gradient(0deg, rgba(153,5,2,1) 0%, rgba(182,10,13,1) 37%, rgba(181,10,13,1) 45%, rgba(149,0,0,1) 100%);            width: 92%;
+            height: 40px;
+            border-radius: 5px / 15px ;
+            top: 26.8%;
+            left: 6%;
+            box-shadow: 0px 7px 0px 0px #650505;
+        }
+            .cilindros {
+                position: absolute;
+                background: rgb(145,8,8);
+                background: linear-gradient(0deg, rgba(145,8,8,1) 37%, rgba(192,13,14,1) 45%, rgba(106,5,4,1) 100%);
+                width: 20%;
+                height: 40px;
+                border-radius: 5px / 15px ;
+                top: 0%;
+                box-shadow: -4px 0px 0px 0px #6A0504;
+            }
+
+                .c1{
+                    left: 15%;
+                }
+                .c2{
+                    left: 65%;
+                }
+    .screen{
+        width: 95%;
+        height: 70%;
+        position: absolute;
+        left: 3%;
+        top: 3%;
+        background: #434342;
+        border-radius: .5em;
+    }  
+        .contend-api{
+            width: 95%;
+            height: 95%;
+            position: absolute;
+            left: 2.5%;
+            top: 2.5%;
+            background: #fdfdfd;
+            border-radius: .5em;
+            box-shadow: inset 0px 0px 1px 4px #b1b0b1;       }   
