@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="icon" type="image/png" sizes="32x32" href="./images/Eiscue_icon.png" />
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/CSS/style-app.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/new-style.css">
 
 
 
@@ -22,56 +26,74 @@
                 <div class="cilindros c1"></div>
                 <div class="cilindros c2"></div>
             </div>
+            
             <section class="principal">
                 <div class="decoracion eje1"></div>
                 <div class="decoracion eje2"></div>
                 
                 <div class="secundary">
                     <div class="screen content-pokedex">
-                        <div class="contend-api">
+                        <div class="contend-api" id="contend-api">
+                            
+                            <div data-poke-card class="poke-card">
+                                <div class="poke-name" data-poke-name>Pokedex</div>
+                                <div data-poke-img-container class="img-container">
+                                    <img data-poke-img class="poke-img" src="/images/poke-shadow.png"/>
+                                </div>
+                                <div class="id" data-poke-id></div>
+                                <div data-poke-types class="poke-types"></div>
+                                <div data-poke-stats class="poke-stats"></div>
+                            </div>
 
+                            <form class="search" action="" onsubmit="searchPokemon(event)">
+                                <input type="text" placeholder="Search" autocomplete="off" name="pokemon">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                     
                 </div>
                 
-               <div class="search">
+               <div class="Ok" id="ok">
                        <button>
-                            <i class="fas fa-search"></i>
+                           <p>OK</p>
+                            
                        </button>
                </div> 
             </section>
             <section class="container-options">
                 <div class="container-buttons">
-                     <button class="left">
+                     <button class="left" id="left">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="up">
+                    <button class="up" id="up">
                         <i class="fas fa-arrow-up"></i>
                     </button>
-                    <button class="right">                        
+                    <button class="right" id="right">                        
                         <i class="fas fa-arrow-right"></i>  
                     </button>
-                    <button class="down">
+                    <button class="down" id="down">
                         <i class="fas fa-arrow-down"></i>
                     </button>
                 </div>
 
                 
                        
-                </section>
+            </section>
             <section class="case">
                 <div class="front-case flipped">
-                    front
+                    <img src="/images/image-front-case.svg" alt="front-case">
                 </div>
                 <div class="back-case flipped">
-                    back
+                    <img src="/images/image-back-case.svg" alt="back-case">
                 </div>
                 
             </section>
         </div>
     </main>
 
-
+<script src="/JS/index.js"></script>
 </body>
 </html>

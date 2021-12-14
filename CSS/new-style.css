@@ -1,0 +1,12 @@
+@media screen and (min-width:500px) {
+    .Ok{
+        width: 65px;
+        height: 65px;
+        left: 6%;
+    }
+    .container-options{
+        width: 112px;
+        height: 70px;
+        top: 76%;
+    }
+}
